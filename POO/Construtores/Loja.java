@@ -7,7 +7,8 @@ public class Loja {
 		Fatura f2 = new Fatura(4, "Celular", 4, 500.0);
 		
 		System.out.println("Resultado da primeira fatura: " + f1.getValorDaFatura()); 
-		System.out.println("Resultado da segunda fatura: " + f2.getValorDaFatura()); 
+		System.out.println("Resultado da segunda fatura: " + f2.getValorDaFatura());
+	 
 		
 		
 	}
