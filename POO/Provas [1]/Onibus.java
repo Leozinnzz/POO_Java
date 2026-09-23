@@ -64,6 +64,7 @@ public class Onibus {
 			return null;
 	}
 	
+
 	public String exibirInfo(){
 		return "Onibus [" + numero + "]" + "Linha [" + linha + "]";
 	}
@@ -74,6 +75,46 @@ public class Onibus {
 			+ "] - Tarifa R$" + tarifa;
 		}
 		return exibirInfo();
+	}
+	
+		public int getNumero() {
+		return numero;
+	}
+	
+	public void setNumero(int numero) {
+		this.numero = numero; 
+	}
+	
+	public String getLinha() {
+		return linha;
+	}
+	
+	public void setLinha(String linha) {
+		this.linha = linha;
+	}
+	
+	public int getCapacidade(){
+		return capacidade;
+	}
+	
+	public void setCapaccidade(int capacidade) {
+		this.capacidade = capacidade;
+	}
+	
+	public int getPassageirosAtuais(){
+		return passageirosAtuais;
+	}
+	
+	public void setPassageirosAtuais(int passageirosAtuais) {
+		this.passageirosAtuais = passageirosAtuais;
+	}
+	
+	public Double getTarifa(){
+		return tarifa;
+	}
+	
+	public void setTarifa(Double tarifa) {
+		this.tarifa = tarifa;
 	}
 	
 }

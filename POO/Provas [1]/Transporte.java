@@ -4,7 +4,6 @@ public class Transporte {
 		Scanner sc = new Scanner(System.in);
 		Onibus buzao1 = new Onibus(1, "Express", 40, 12.50);
 		Onibus buzao2 = new Onibus(2, "Horizonte", 60);
-	
 		
 		do {
 		
@@ -32,6 +31,7 @@ public class Transporte {
 							buzao1.embarcarPassageiro();
 							buzao2.embarcarPassageiro();
 						}
+						break;
 				case 2:
 					System.out.print("Vai definir a quantidade de passsageiros? (Sim ou Nao): ");		
 					String resp2 = sc.nextLine();	
@@ -48,9 +48,17 @@ public class Transporte {
 						buzao2.desembarcarPassageiro();
 						sc.nextLine();
 					}		
+					break;
+				case 3: 
+					System.out.print("Digite o tipo da tarifa: ");
+					String tarifa  = sc.nextLine();
+					System.out.println(buzao1.calcularRenda(tarifa));
+					System.out.println(buzao2.calcularRenda(tarifa));
+					break;
+				case 4:
+					System.out.println(buzao1.exibirInfo());
+					System.out.println(buzao2.exibirInfo(true));
 			}
-			
-			
 			
 		}while(true);
 	}
