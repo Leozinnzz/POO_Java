@@ -1,4 +1,5 @@
 public class Funcionario {
+	
 	private int matricula;
  	private String nome; 
  	private int departamento;
@@ -46,5 +47,7 @@ public class Funcionario {
 	public void setFuncao(String funcao) {
 		this.funcao = funcao;
 	}
+	
+	
 }
 
